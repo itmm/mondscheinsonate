@@ -1,0 +1,5 @@
+*.dorico
+*.pdf
+*.midi
+*.gp
+.DS_Store
