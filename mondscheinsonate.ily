@@ -61,7 +61,7 @@ guitar = <<
 		\times 2/3 { r8 b d } \times 2/3 { fis, b d }
 			\times 2/3 { r8 ais cis } \times 2/3 { fis, ais cis } |
 		\times 2/3 { b8 d fis } \times 2/3 { b, d fis }
-			\times 2/3 { d8 dis fis } \times 2/3 { r dis fis }    |
+			\times 2/3 { b,8 dis fis } \times 2/3 { r dis fis }    |
 		\times 2/3 { r8 e g } \times 2/3 { r e g }
 			\times 2/3 { r8 e g } \times 2/3 { r e g }            |
 	% 17
