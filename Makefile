@@ -1,9 +1,20 @@
 .PHONY: all clean
 
-all: mondscheinsonate.pdf mondscheinsonate.midi
+Inputs := ${wildcard *.ily}
+Outputs := ${Inputs:.ily=.pdf} ${Inputs:.ily=.midi}
+Build_Files := ${Inputs:.ily=.build}
+
+all: ${Outputs}
 
 clean:
-	rm -f mondscheinsonate.pdf mondscheinsonate.midi
+	rm -f ${Outputs} ${Build_Files}
 
-mondscheinsonate.pdf mondscheinsonate.midi &: mondscheinsonate.ily
-	lilypond mondscheinsonate.ily
+%.build: %.ily
+	lilypond $^
+	touch $@
+
+%.pdf: %.build
+	touch $@
+
+%.midi: %.build
+	touch $@
