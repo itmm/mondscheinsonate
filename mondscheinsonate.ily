@@ -43,6 +43,15 @@ melodie = {
 % 53
 	cis2. cis4 | d2. bis4 | cis2 cis | b2. b4 |
 % 57
+	a4 a gis gis | fis2 gis4 a | gis2 gis | gis,,2. gis8. gis16 |
+% 61
+	gis2. gis8. gis16 | gis2. gis8. gis16 |
+	gis2. gis8. gis16 | gis2. gis8. gis16 |
+% 65
+	gis2. gis8. gis16 | gis2 cis2 | gis2 s2 | s1 |
+% 69
+	s |
+% 70
 }
 
 begleitung = {
@@ -166,14 +175,43 @@ begleitung = {
 	\times 2/3 { cis,8 fis a } \times 2/3 { cis, fis a }
 		\times 2/3 { cis, fis a } \times 2/3 { cis, fis a }       |
 % 53
-	\times 2/3 { cis, eis gis } \times 2/3 { cis, eis gis }
+	\times 2/3 { cis,8 eis gis } \times 2/3 { cis, eis gis }
 		\times 2/3 { cis, eis gis } \times 2/3 { cis, eis gis } |
-	\times 2/3 { cis, fis a} \times 2/3 { cis, fis a }
+	\times 2/3 { cis,8 fis a} \times 2/3 { cis, fis a }
 		\times 2/3 { cis, fis a } \times 2/3 { cis, fis a }     |
-	\times 2/3 { cis, eis gis } \times 2/3 { cis, eis gis }
+	\times 2/3 { cis,8 eis gis } \times 2/3 { cis, eis gis }
 		\times 2/3 { cis, fis a } \times 2/3 { cis, fis a }     |
-	\times 2/3 { b, fis' a } \times 2/3 { b, fis' a }
+	\times 2/3 { b,8 fis' a } \times 2/3 { b, fis' a }
 		\times 2/3 { b, fis' a } \times 2/3 { b, e gis }        |
+% 57
+	\times 2/3 { a,8 e' gis } \times 2/3 { a, dis fis }
+		\times 2/3 { gis, dis' fis } \times 2/3 { gis, cis e }  |
+	\times 2/3 { fis,8 cis' dis } \times 2/3 { fis, cis' dis }
+		\times 2/3 { gis, cis dis } \times 2/3 { a cis dis }    |
+	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
+		\times 2/3 { fis, bis dis } \times 2/3 { fis, bis dis } |
+	\times 2/3 { e,8 gis cis } \times 2/3 { gis cis e }
+		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }     |
+% 61
+	\times 2/3 { gis,8 dis' fis } \times 2/3 { gis, dis' fis }
+		\times 2/3 { gis, dis' fis } \times 2/3 { gis, dis' fis }  |
+	\times 2/3 { gis,8 e' cis } \times 2/3 { gis' e cis' }
+		\times 2/3 { gis e' cis } \times 2/3 { gis' e cis }        |
+	\times 2/3 { bis8 dis a } \times 2/3 { bis fis a }
+		\times 2/3 { dis, fis a, } \times 2/3 { bis gis fis }      |
+	\times 2/3 { << e8 cis' >> e cis } \times 2/3 { gis' e cis' }
+		\times 2/3 { gis e' cis } \times 2/3 { gis' e cis }        |
+% 65
+	\times 2/3 { bis8 dis a } \times 2/3 { bis fis a }
+		\times 2/3 { dis, fis a, } \times 2/3 { bis gis fis }      |
+	\times 2/3 { << e8 cis' >> gis cis } \times 2/3 { e cis gis }
+		\times 2/3 { r e gis } \times 2/3 { cis gis e }            |
+	\times 2/3 { r8 cis e } \times 2/3 { gis e cis }
+		\times 2/3 { gis cis gis } \times 2/3 { e gis e }          |
+	s1                                                            |
+% 69
+	s1 |
+% 70
 }
 
 bass = {
@@ -230,6 +268,17 @@ bass = {
 	<< cis,2 cis' >> << fis,, fis' >>                            |
 	<< dis2. dis' >> << e,4 e' >>                                |
 % 57
+	<< cis,4 cis' >> << dis, dis' >> << bis, bis' >> << cis, cis' >> |
+	<< a,2 a' >> << gis,4 gis' >> << fis, fis' >>                    |
+	<< gis,2 gis' >> << gis, gis' >>                                 |
+	cis,1                                                            |
+% 61
+	bis1 | cis | gis | cis |
+% 65
+	gis1 | cis~ | cis2 s2 | cis2 << cis2 gis' cis e gis cis >> |
+% 69
+	<< cis,,1 gis' cis e gis cis >> |
+% 70
 }
 
 upper = <<
