@@ -27,15 +27,15 @@ melodie = {
 % 21
 	g2 fis | cis cis4 cis | s2. cis'8. cis16 | cis2. cis8. cis16 |
 % 25
-	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | s1 |
+	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | s gis a fis |
 % 29
-	s1 | s | s | s |
+	s4 gis, a fis | s cis'' e cis | s cis, e cis | s1 |
 % 33
 	s1 | s | s | s |
 % 37
-	s1 | s | s | s |
+	s2 \times 2/3 { a8 dis4, } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 s2 |
 % 41
-	s1 | s2. gis8. gis16 | gis2. gis8. gis16 | gis2 a |
+	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
 	gis2 fis4 b | e, s2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
 % 49
