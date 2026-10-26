@@ -311,6 +311,13 @@ bass_tab = <<
 			indent = 0\in
 			\omit Voice.StringNumber
 		}
+	}
+	\score {
+		<<
+			\new Staff \with { midiInstrument = "acoustic guitar (steel)" } { \melodie_git }
+			\new Staff \with { midiInstrument = "acoustic guitar (nylon)" } { \begleitung_git }
+			\new Staff \with { midiInstrument = "contrabass" } { \bass_git }
+		>>
 		\midi { }
 	}
 }
