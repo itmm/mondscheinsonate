@@ -124,9 +124,9 @@ begleitung = {
 	\times 2/3 { e,8 e'\3 gis\2 } \times 2/3 { cis e,\3 gis\2 }
 		\times 2/3 { e' e,\3 gis\2 } \times 2/3 { cis e,\3 gis\2 }    |
 	\times 2/3 { r8 e, gis } \times 2/3 { cis e, gis }
-		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis }    |
-	\times 2/3 { dis8 a' fis } \times 2/3 { bis a dis }
-		\times 2/3 { bis fis' dis } \times 2/3 { a' fis bis } |
+		\times 2/3 { e'\2 e, gis } \times 2/3 { cis e, gis }    |
+	\times 2/3 { dis8\5 a' fis } \times 2/3 { bis\3 a\4 dis }
+		\times 2/3 { bis\3 fis' dis } \times 2/3 { a'\2 fis\3 bis } |
 % 33
 	\times 2/3 { e,,8 cis' gis } \times 2/3 { e' cis gis' }
 		\times 2/3 { e cis' gis } \times 2/3 { e' cis gis }   |
