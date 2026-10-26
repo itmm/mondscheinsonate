@@ -294,21 +294,25 @@ bass_tab = <<
 \book {
 	\score {
 		<<
-			\new StaffGroup << 
+			\new StaffGroup \with { instrumentName = \markup { \column {
+				"Akustik- " \line { "gitarre" } 
+			}}} << 
 				\new Staff { \melodie_git }
 				\new TabStaff { \melodie_tab }
 			>>
-			\new StaffGroup << 
+			\new StaffGroup \with { instrumentName = \markup { \column {
+				"Klassik- " \line { "gitarre" }
+			}}} << 
 				\new Staff { \begleitung_git }
 				\new TabStaff { \begleitung_tab }
 			>>
-			\new StaffGroup << 
+			\new StaffGroup \with { instrumentName = "Bass" } << 
 				\new Staff { \bass_git }
 	 			\new TabStaff \with { stringTunings = #bass-tuning } { \bass_tab }
 			>>
 		>>
 		\layout {
-			indent = 0\in
+			%indent = 0\in
 			\omit Voice.StringNumber
 		}
 	}
