@@ -33,7 +33,7 @@ melodie = {
 % 33
 	s1 | s | s | s |
 % 37
-	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 s2 |
+	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 d4 cis | bis2 s2 |
 % 41
 	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
@@ -62,8 +62,8 @@ begleitung = {
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
 	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
-	\times 2/3 { gis,8( cis e } \times 2/3 { gis, cis e) }
-		\times 2/3 { gis,( d' fis } \times 2/3 { gis, d' fis) }  |
+	\times 2/3 { a,8( cis e } \times 2/3 { a, cis e) }
+		\times 2/3 { a,( d fis } \times 2/3 { a, d fis) }        |
 	\times 2/3 { gis,8( bis fis' } \times 2/3 { gis, cis e }
 		\times 2/3 { gis, cis dis } \times 2/3 { fis, bis dis) } |
 % 5
@@ -72,7 +72,7 @@ begleitung = {
 	\times 2/3 { gis,8 dis' fis } \times 2/3 { gis, dis' fis }
 		\times 2/3 { gis, dis' fis } \times 2/3 { gis, dis' fis } |
 	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
-		\times 2/3 { gis, cis fis } \times 2/3 { gis, cis fis }   |
+		\times 2/3 { a, cis fis } \times 2/3 { a, cis fis }       |
 	\times 2/3 { gis,8 b e} \times 2/3 { gis, b e }
 		\times 2/3 { a, b dis } \times 2/3 { a b dis }            |
 % 9
@@ -131,13 +131,13 @@ begleitung = {
 		\times 2/3 { bis fis' dis } \times 2/3 { a' fis bis } |
 % 33
 	\times 2/3 { e,,8 cis' gis } \times 2/3 { e' cis gis' }
-		\times 2/3 { e cis' gis } \times 2/3 { e' cis gis }   |
-	\times 2/3 { cis,8 fisis e } \times 2/3 { ais fis cis' }
-		\times 2/3 { ais e' cis } \times 2/3 { fisis e ais }  |
+		\times 2/3 { e cis' gis } \times 2/3 { e' cis gis }     |
+	\times 2/3 { cis,8 fisis e } \times 2/3 { ais fisis cis' }
+		\times 2/3 { ais e' cis } \times 2/3 { fisis e ais }    |
 	\times 2/3 { fis,8 bis a } \times 2/3 { dis bis fis' }
-		\times 2/3 { dis a' fis } \times 2/3 { bis a dis }    |
+		\times 2/3 { dis a' fis } \times 2/3 { bis a dis }      |
 	\times 2/3 { bis8 fis a } \times 2/3 { dis, fis bis, }
-		\times 2/3 { dis a bis } \times 2/3 { fis a dis, }    |
+		\times 2/3 { dis a bis } \times 2/3 { fis a dis, }      |
 % 37
 	\times 2/3 { fis8 bis, dis } \times 2/3 { a bis fis }
 		\times 2/3 { a dis, fis } \times 2/3 { cis fis a }   |
