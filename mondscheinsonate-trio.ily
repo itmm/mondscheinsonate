@@ -17,9 +17,9 @@ melodie = {
 % 1
 	s1 | s | s | s |
 % 5
-	s2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4\2 b |
+	s2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4 b |
 % 9
-	e,4\2 s2. | s2. g8. g16 | g2. g8. g16 | g2. fis4 |
+	e,4 s2. | s2. g8. g16 | g2. g8. g16 | g2. fis4 |
 % 13
 	fis2 g4 e | fis2 fis | s2. b4 | c2. ais4 |
 % 17
@@ -62,10 +62,10 @@ begleitung = {
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
 	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
-	\times 2/3 { gis,8( cis e } \times 2/3 { gis, cis e) }
-		\times 2/3 { gis,( d' fis } \times 2/3 { gis, d' fis) }  |
-	\times 2/3 { gis,8( bis fis' } \times 2/3 { gis, cis e }
-		\times 2/3 { gis,\4 cis\3 dis } \times 2/3 { fis, bis\3 dis) } |
+	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
+		\times 2/3 { gis, d' fis } \times 2/3 { gis, d' fis }  |
+	\times 2/3 { gis,8 bis fis' } \times 2/3 { gis, cis e }
+		\times 2/3 { gis,\4 cis\3 dis } \times 2/3 { fis, bis\3 dis } |
 % 5
 	\times 2/3 { e,8 gis cis } \times 2/3 { gis cis e }
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }       |
@@ -85,46 +85,46 @@ begleitung = {
 	\times 2/3 { g,8 c e } \times 2/3 { g, b e }
 		\times 2/3 { g, cis e } \times 2/3 { fis, cis'\3 e\2 } |
 % 13
-	\times 2/3 { fis,8 b d } \times 2/3 { fis, b d }
-		\times 2/3 { g, b cis } \times 2/3 { e, b' cis }        |
-	\times 2/3 { fis,8 b d } \times 2/3 { fis, b d }
+	\times 2/3 { fis,8 b\3 d } \times 2/3 { fis, b\3 d }
+		\times 2/3 { g,\4 b\3 cis } \times 2/3 { e, b'\3 cis }        |
+	\times 2/3 { fis,8 b\3 d } \times 2/3 { fis, b\3 d }
 		\times 2/3 { fis, ais cis } \times 2/3 { fis, ais cis } |
-	\times 2/3 { b8 d fis } \times 2/3 { b, d fis }
-		\times 2/3 { b, dis fis } \times 2/3 { b, dis fis }     |
-	\times 2/3 { b,8 e g } \times 2/3 { b, e g }
-		\times 2/3 { b, e g } \times 2/3 { b, e g }             |
+	\times 2/3 { b8\3 d fis } \times 2/3 { b,\3 d fis }
+		\times 2/3 { b,\3 dis fis } \times 2/3 { b,\3 dis fis }     |
+	\times 2/3 { b,8\3 e\2 g } \times 2/3 { b,\3 e\2 g }
+		\times 2/3 { b,\3 e\2 g } \times 2/3 { b,\3 e\2 g }             |
 % 17
-	\times 2/3 { b, dis fis } \times 2/3 { b, dis fis }
-		\times 2/3 { b, dis fis } \times 2/3 { b, dis fis } |
-	\times 2/3 { b, e g } \times 2/3 { b, e g }
-		\times 2/3 { b, e g } \times 2/3 { b, e g }         |
-	\times 2/3 { b, dis fis } \times 2/3 { b, dis fis }
-		\times 2/3 { b, d eis } \times 2/3 { b d eis }      |
-	\times 2/3 { b cis gis' } \times 2/3 { b, cis gis' }
+	\times 2/3 { b,\3 dis fis } \times 2/3 { b,\3 dis fis }
+		\times 2/3 { b,\3 dis fis } \times 2/3 { b,\3 dis fis } |
+	\times 2/3 { b,\3 e\2 g } \times 2/3 { b,\3 e\2 g }
+		\times 2/3 { b,\3 e\2 g } \times 2/3 { b,\3 e\2 g }         |
+	\times 2/3 { b,\3 dis fis } \times 2/3 { b,\3 dis fis }
+		\times 2/3 { b,\3 d eis } \times 2/3 { b\3 d eis }      |
+	\times 2/3 { b\3 cis gis' } \times 2/3 { b,\3 cis gis' }
 		\times 2/3 { a, cis fis } \times 2/3 { a, cis fis } |
 % 21
-	\times 2/3 { g,8 b d } \times 2/3 { g, b d }
+	\times 2/3 { g,8\4 b\3 d } \times 2/3 { g,\4 b\3 d }
 		\times 2/3 { fis, a dis } \times 2/3 { fis, a dis }     |
 	\times 2/3 { cis,8 fis a } \times 2/3 { cis, fis a }
 		\times 2/3 { cis, fis gis } \times 2/3 { cis, eis gis } |
 	\times 2/3 { fis8 a cis } \times 2/3 { a cis fis }
-		\times 2/3 { cis fis a } \times 2/3 { cis, fis a }      |
-	\times 2/3 { cis,8 gis' b } \times 2/3 { cis, gis' b }
-		\times 2/3 { cis, gis' b } \times 2/3 { cis, gis' b }   |
+		\times 2/3 { cis\3 fis\2 a } \times 2/3 { cis,\3 fis\2 a }      |
+	\times 2/3 { cis,8\3 gis'\2 b } \times 2/3 { cis,\3 gis'\2 b }
+		\times 2/3 { cis,\3 gis'\2 b } \times 2/3 { cis,\3 gis'\2 b }   |
 % 25
-	\times 2/3 { cis,8 fis a } \times 2/3 { cis, fis a }
-		\times 2/3 { bis, fis' a } \times 2/3 { bis, fis' a }  |
-	\times 2/3 { dis,8 fis gis } \times 2/3 { dis fis gis }
-		\times 2/3 { dis fis gis } \times 2/3 { dis fis gis }  |
-	\times 2/3 { e8 gis cis } \times 2/3 { e, gis cis }
-		\times 2/3 { dis, fis a } \times 2/3 { cis, e ais }    |
-	\times 2/3 { bis8 bis, dis } \times 2/3 { gis bis, dis }
-		\times 2/3 { a' bis, dis } \times 2/3 { fis bis, dis } |
+	\times 2/3 { cis,8\3 fis\2 a } \times 2/3 { cis,\3 fis\2 a }
+		\times 2/3 { bis,\3 fis'\2 a } \times 2/3 { bis,\3 fis'\2 a }  |
+	\times 2/3 { dis,8\3 fis\2 gis } \times 2/3 { dis\3 fis\2 gis }
+		\times 2/3 { dis\3 fis\2 gis } \times 2/3 { dis\3 fis\2 gis }  |
+	\times 2/3 { e8\3 gis\2 cis } \times 2/3 { e,\3 gis\2 cis }
+		\times 2/3 { dis,\3 fis\2 a } \times 2/3 { cis,\3 e\2 ais }    |
+	\times 2/3 { bis8 bis,\3 dis } \times 2/3 { gis bis,\3 dis }
+		\times 2/3 { a' bis,\3 dis } \times 2/3 { fis bis,\3 dis } |
 % 29
-	\times 2/3 { r8 bis dis } \times 2/3 { gis, bis dis }
-		\times 2/3 { a bis dis } \times 2/3 { fis, bis dis }  |
-	\times 2/3 { e,8 e' gis } \times 2/3 { cis e, gis }
-		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis }    |
+	\times 2/3 { r8 bis\3 dis } \times 2/3 { gis,\4 bis\3 dis }
+		\times 2/3 { a\4 bis\3 dis } \times 2/3 { fis, bis\3 dis }  |
+	\times 2/3 { e,8 e'\3 gis\2 } \times 2/3 { cis e,\3 gis\2 }
+		\times 2/3 { e' e,\3 gis\2 } \times 2/3 { cis e,\3 gis\2 }    |
 	\times 2/3 { r8 e, gis } \times 2/3 { cis e, gis }
 		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis }    |
 	\times 2/3 { dis8 a' fis } \times 2/3 { bis a dis }
@@ -208,7 +208,7 @@ begleitung = {
 		\times 2/3 { r e gis } \times 2/3 { cis gis e }            |
 	\times 2/3 { r8 cis e } \times 2/3 { gis e cis }
 		\times 2/3 { gis cis gis } \times 2/3 { e gis e }          |
-	s2 << gis cis es >> |
+	s2 << gis cis e >> |
 % 69
 	<< gis,1 cis e >> |
 % 70
@@ -220,7 +220,7 @@ bass = {
 % 1
 	cis,1 | b | a2 fis| gis gis | 
 % 5
-	<< cis1 gis'\2 >> | << bis, gis'\2 >> | cis,2 fis, | b b |
+	<< cis1 gis' >> | << bis, gis' >> | cis,2 fis, | b b |
 % 9
 	e1 | e | d | c4 b ais2 |
 % 13
@@ -230,8 +230,8 @@ bass = {
 % 21
 	b2 bis | cis cis | << fis,1 cis' >> | << eis, cis' >> |
 % 25
-	fis2 dis4 cis                  | << bis2. gis'\2 >> << bis,4 gis'\2 >> |
-	<< cis,2 gis'\2 >> fis4, fisis | gis1                                  |
+	fis2 dis4 cis                  | << bis2.\3 gis'\2 >> << bis,4\3 gis'\2 >> |
+	<< cis,2\3 gis'\2 >> fis,4 fisis | gis1                                  |
 % 29
 	gis1 | gis | gis | gis |
 % 33
@@ -239,27 +239,16 @@ bass = {
 % 37
 	gis1 | gis | gis | gis2 a |
 % 41
-	fis2 gis | << cis1 gis'\2 >> | << bis,1 gis'\2>> | cis,2 fis, |
+	fis2 gis | << cis1\3 gis'\2 >> | << bis,1\3 gis'\2>> | cis,2 fis, |
 % 45
-	<< b,2 b' >> << b, b' >>                      |
-	<< e,1 e' >>                                  |
-	<< dis,1 dis' >>                              |
-	<< e,2 e' >> << dis,4 dis' >> << cis, cis' >> |
+	b2 b | e1 | dis | e2 dis4 cis |
 % 49
-	<< bis,2 gis' bis >> << cis, gis' cis >>                     |
-	<< fis,,2 fis' >> << gis, gis' >>                            |
-	<< cis,1~ cis'~ >>                                           |
-	<< cis,4 cis' >> << fis, fis' >> << a, a' >> << fis, fis' >> |
+	<< bis2\3 gis'\2 >> << cis,\3 gis'\2 >> | fis,2 gis       |
+	cis1~                               | cis4 fis a fis  |
 % 53
-	<< cis,1~ cis'~ >>                                           |
-	<< cis,4 cis' >> << fis, fis' >> << a, a' >> << fis, fis' >> |
-	<< cis,2 cis' >> << fis,, fis' >>                            |
-	<< dis2. dis' >> << e,4 e' >>                                |
+	cis1~ | cis4 fis a fis | cis2 fis | dis2. e4 |
 % 57
-	<< cis,4 cis' >> << dis, dis' >> << bis, bis' >> << cis, cis' >> |
-	<< a,2 a' >> << gis,4 gis' >> << fis, fis' >>                    |
-	<< gis,2 gis' >> << gis, gis' >>                                 |
-	cis,1                                                            |
+	cis4 dis bis cis | a2 gis4 fis | gis2 gis | cis1 |
 % 61
 	bis1 | cis | gis | cis |
 % 65
@@ -305,20 +294,6 @@ bass_tab = <<
 	\new TabVoice \relative { \bass }
 >>
 
-%\book {
-%	\score {
-%		\new PianoStaff \with { midiInstrument = "acoustic grand" }
-%			<<
-%				\new Staff = "upper" \upper
-%				\new Staff = "lower" \lower
-%			>>
-%
-%		\layout {
-%			indent = 0\in
-%		}
-%		\midi { }
-%	}
-%}
 \book {
 	\score {
 		<<
