@@ -1,4 +1,4 @@
-\version "2.26.0"
+\version "2.24.4"
 
 \header {
 	title = "Mondscheinsonate"
@@ -8,36 +8,35 @@
 
 \paper {
 	#(set-paper-size "a4")
-	%page-count = #3 
+	page-count = #12
 }
 
 melodie = {
 	\tempo 4 = 80
-	\voiceOne
 % 1
-	s1 | s | s | s |
+	r1 | r | r | r |
 % 5
-	s2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4 b |
+	r2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4 b |
 % 9
-	e,4 s2. | s2. g8. g16 | g2. g8. g16 | g2. fis4 |
+	e,4 r2. | r2. g8. g16 | g2. g8. g16 | g2. fis4 |
 % 13
-	fis2 g4 e | fis2 fis | s2. b4 | c2. ais4 |
+	fis2 g4 e | fis2 fis | r2. b4 | c2. ais4 |
 % 17
 	b2. b4 | c2. ais4 | b2 b | b a |
 % 21
-	g2 fis | cis cis4 cis | s2. cis'8. cis16 | cis2. cis8. cis16 |
+	g2 fis | cis cis4 cis | r2. cis'8. cis16 | cis2. cis8. cis16 |
 % 25
-	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | s gis a fis |
+	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | r gis a fis |
 % 29
-	s4 gis, a fis | s cis'' e cis | s cis, e cis | s1 |
+	r4 gis, a fis | r cis'' e cis | r cis, e cis | r1 |
 % 33
-	s1 | s | s | s |
+	r1 | r | r | r |
 % 37
-	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 s2 |
+	r2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 r2 |
 % 41
-	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
+	r1 | r2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
-	gis2 fis4 b | e, s2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
+	gis2 fis4 b | e, r2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
 % 49
 	dis2 e | d2 bis | cis2. cis4 | d2. bis4 |
 % 53
@@ -48,7 +47,7 @@ melodie = {
 	gis2. gis8. gis16 | gis2. gis8. gis16 |
 	gis2. gis8. gis16 | gis2. gis8. gis16 |
 % 65
-	gis2. gis8. gis16 | gis2 cis2 | gis2 s2 | s2 << gis' cis >> |
+	gis2. gis8. gis16 | gis2 cis2 | gis2 r2 | r2 << gis' cis >> |
 % 69
 	<< gis1 cis >> |
 % 70
@@ -56,7 +55,6 @@ melodie = {
 
 begleitung = {
 	\tempo 4 = 80
-	\voiceTwo
 % 1
 	\times 2/3 { gis8 cis e } \times 2/3 { gis, cis e }
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
@@ -208,7 +206,7 @@ begleitung = {
 		\times 2/3 { r e gis } \times 2/3 { cis gis e }            |
 	\times 2/3 { r8 cis e } \times 2/3 { gis e cis }
 		\times 2/3 { gis cis gis } \times 2/3 { e gis e }          |
-	s2 << gis cis e >> |
+	r2 << gis cis e >> |
 % 69
 	<< gis,1 cis e >> |
 % 70
@@ -216,7 +214,6 @@ begleitung = {
 
 bass = {
 	\tempo 4 = 80
-	\voiceOne
 % 1
 	cis,1 | b | a2 fis| gis gis | 
 % 5
@@ -252,7 +249,7 @@ bass = {
 % 61
 	bis1 | cis | gis | cis |
 % 65
-	gis1 | cis~ | cis2 s2 | cis2 cis |
+	gis1 | cis~ | cis2 r2 | cis2 cis |
 % 69
 	cis1 |
 % 70

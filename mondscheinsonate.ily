@@ -1,4 +1,4 @@
-\version "2.26.0"
+\version "2.24.4"
 
 \header {
 	title = "Mondscheinsonate"
@@ -33,7 +33,7 @@ melodie = {
 % 33
 	s1 | s | s | s |
 % 37
-	s2 \times 2/3 { a8 dis4, } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 s2 |
+	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 dis4 cis | bis2 s2 |
 % 41
 	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
