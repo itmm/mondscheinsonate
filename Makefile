@@ -9,6 +9,18 @@ all: ${Outputs}
 clean:
 	rm -f ${Outputs} ${Build_Files}
 
+mondscheinsonate-trio.ily: mondscheinsonate-trio.dat
+	touch $@
+
+mondscheinsonate-trio-melodie.ily: mondscheinsonate-trio.dat
+	touch $@
+
+mondscheinsonate-trio-begleitung.ily: mondscheinsonate-trio.dat
+	touch $@
+
+mondscheinsonate-trio-bass.ily: mondscheinsonate-trio.dat
+	touch $@
+
 %.build: %.ily
 	lilypond $^
 	touch $@
