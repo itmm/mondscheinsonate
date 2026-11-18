@@ -9,6 +9,7 @@
 \paper {
 	#(set-paper-size "a4")
 	page-count = #4
+	ragged-last-bottom = #f
 }
 
 \include "./mondscheinsonate-trio.dat"
