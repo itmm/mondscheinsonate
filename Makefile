@@ -2,6 +2,13 @@
 
 Inputs := ${wildcard *.ily}
 Outputs := ${Inputs:.ily=.pdf} ${Inputs:.ily=.midi}
+Trio_Outputs := mondscheinsonate-trio-melodie.pdf
+Trio_Outputs += mondscheinsonate-trio-melodie.midi
+Trio_Outputs += mondscheinsonate-trio-begleitung.pdf
+Trio_Outputs += mondscheinsonate-trio-begleitung.midi
+Trio_Outputs += mondscheinsonate-trio-bass.pdf
+Trio_Outputs += mondscheinsonate-trio-bass.midi
+Outputs += ${Trio_Outputs}
 Build_Files := ${Inputs:.ily=.build}
 
 all: ${Outputs}
@@ -9,17 +16,6 @@ all: ${Outputs}
 clean:
 	rm -f ${Outputs} ${Build_Files}
 
-mondscheinsonate-trio.ily: mondscheinsonate-trio.dat
-	touch $@
-
-mondscheinsonate-trio-melodie.ily: mondscheinsonate-trio.dat
-	touch $@
-
-mondscheinsonate-trio-begleitung.ily: mondscheinsonate-trio.dat
-	touch $@
-
-mondscheinsonate-trio-bass.ily: mondscheinsonate-trio.dat
-	touch $@
 
 %.build: %.ily
 	lilypond $^
@@ -30,3 +26,5 @@ mondscheinsonate-trio-bass.ily: mondscheinsonate-trio.dat
 
 %.midi: %.build
 	touch $@
+
+${Trio_Outputs} &: mondscheinsonate-trio.build
