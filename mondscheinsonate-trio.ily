@@ -3,16 +3,10 @@
 today = #(strftime "%d.%m.%Y" (localtime (current-time)))
 
 \header {
-	title = "Mondscheinsonate Trio"
+	title = "Mondscheinsonate – Trio"
 	composer = "Ludwig van Beethoven"
 	tagline = ##f
 	arranger = \markup { "Arrangement: timm@knp.de" \today }
-}
-
-\paper {
-	#(set-paper-size "a4")
-	%page-count = #12
-	ragged-last-bottom = #f
 }
 
 melodie = {
@@ -298,6 +292,11 @@ bass_tab = {
 }
 
 \book {
+	\paper {
+		#(set-paper-size "a4")
+		page-count = #12
+		ragged-last-bottom = #f
+	}
 	\score {
 		<<
 			\new StaffGroup \with { instrumentName = \markup { \column {
@@ -336,6 +335,10 @@ bass_tab = {
 	}
 }
 \book {
+	\paper {
+		#(set-paper-size "a4")
+	}
+
 	\bookOutputSuffix "melodie"
 	\score {
 		\new StaffGroup << 
@@ -355,6 +358,11 @@ bass_tab = {
 	}
 }
 \book {
+	\paper {
+		#(set-paper-size "a4")
+		page-count = #4
+		ragged-last-bottom = #f
+	}
 	\bookOutputSuffix "begleitung"
 	\score {
 		\new StaffGroup << 
@@ -374,6 +382,9 @@ bass_tab = {
 	}
 }
 \book {
+	\paper {
+		#(set-paper-size "a4")
+	}
 	\bookOutputSuffix "bass"
 	\score {
 		\new StaffGroup << 

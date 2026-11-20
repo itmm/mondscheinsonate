@@ -1,7 +1,7 @@
 \version "2.24.4"
 
 \header {
-	title = "Mondscheinsonate"
+	title = "Mondscheinsonate – Gitarre"
 	composer = "Ludwig van Beethoven"
 	tagline = ##f
 	arranger = "Arrangement: timm@knp.de"
