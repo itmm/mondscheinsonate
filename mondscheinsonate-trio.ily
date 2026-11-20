@@ -12,6 +12,7 @@ today = #(strftime "%d.%m.%Y" (localtime (current-time)))
 \paper {
 	#(set-paper-size "a4")
 	%page-count = #12
+	ragged-last-bottom = #f
 }
 
 melodie = {
@@ -142,11 +143,11 @@ begleitung = {
 % 37
 	\times 2/3 { fis8\2 bis,\4 dis\3 } \times 2/3 { a\4 bis\3 fis\4 }
 		\times 2/3 { a dis, fis } \times 2/3 { cis fis a }           |
-	\times 2/3 { bis,8 fis'\4 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
+	\times 2/3 { bis,8\6 fis'\5 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
 		\times 2/3 { dis\5 fis a } \times 2/3 { cis, fis a }           |
-	\times 2/3 { bis,8 fis'\4 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
+	\times 2/3 { bis,8\6 fis'\5 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
 		\times 2/3 { d\5 fis a } \times 2/3 { cis, fis a }             |
-	\times 2/3 { bis,8 fis'\4 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
+	\times 2/3 { bis,8\6 fis'\5 gis\4 } \times 2/3 { a\4 gis\4 fis\4 }
 		\times 2/3 { cis e cis' } \times 2/3 { cis, e cis' }       |
 % 41
 	\times 2/3 { dis,8 a' cis } \times 2/3 { dis, a' cis }
@@ -260,41 +261,41 @@ bass = {
 % 70
 }
 
-melodie_git = <<
+melodie_git = {
 	\time 4/4
 	\clef "treble_8" \key cis \minor
 	\new Voice \relative { \melodie }
->>
+}
 
-melodie_tab = <<
+melodie_tab = {
 	\time 4/4
 	\clef "tab"
 	\new TabVoice \relative { \melodie }
->>
+}
 
-begleitung_git = <<
+begleitung_git = {
 	\time 4/4
 	\clef "treble_8" \key cis \minor
 	\new Voice \relative { \begleitung }
->>
+}
 
-begleitung_tab = <<
+begleitung_tab = {
 	\time 4/4
 	\clef "tab"
 	\new TabVoice \relative { \begleitung }
->>
+}
 
-bass_git = <<
+bass_git = {
 	\time 4/4
 	\clef "bass_8" \key cis \minor
 	\new Voice \relative { \bass }
->>
+}
 
-bass_tab = <<
+bass_tab = {
 	\time 4/4
 	\clef "tab"
 	\new TabVoice \relative { \bass }
->>
+}
 
 \book {
 	\score {
@@ -323,8 +324,12 @@ bass_tab = <<
 	}
 	\score {
 		<<
-			\new Staff \with { midiInstrument = "acoustic guitar (steel)" } { \melodie_git }
-			\new Staff \with { midiInstrument = "acoustic guitar (nylon)" } { \begleitung_git }
+			\new Staff \with { midiInstrument = "acoustic guitar (steel)" } {
+				\melodie_git
+			}
+			\new Staff \with { midiInstrument = "acoustic guitar (nylon)" } {
+				\begleitung_git
+			}
 			\new Staff \with { midiInstrument = "contrabass" } { \bass_git }
 		>>
 		\midi { }
@@ -333,11 +338,9 @@ bass_tab = <<
 \book {
 	\bookOutputSuffix "melodie"
 	\score {
-		<<
-			\new StaffGroup << 
-				\new Staff { \melodie_git }
-				\new TabStaff { \melodie_tab }
-			>>
+		\new StaffGroup << 
+			\new Staff { \melodie_git }
+			\new TabStaff { \melodie_tab }
 		>>
 		\layout {
 			indent = 0\in
@@ -345,20 +348,18 @@ bass_tab = <<
 		}
 	}
 	\score {
-		<<
-			\new Staff \with { midiInstrument = "acoustic guitar (steel)" } { \melodie_git }
-		>>
+		\new Staff \with { midiInstrument = "acoustic guitar (steel)" } {
+			\melodie_git
+		}
 		\midi { }
 	}
 }
 \book {
 	\bookOutputSuffix "begleitung"
 	\score {
-		<<
-			\new StaffGroup << 
-				\new Staff { \begleitung_git }
-				\new TabStaff { \begleitung_tab }
-			>>
+		\new StaffGroup << 
+			\new Staff { \begleitung_git }
+			\new TabStaff { \begleitung_tab }
 		>>
 		\layout {
 			indent = 0\in
@@ -366,20 +367,18 @@ bass_tab = <<
 		}
 	}
 	\score {
-		<<
-			\new Staff \with { midiInstrument = "acoustic guitar (nylon)" } { \begleitung_git }
-		>>
+		\new Staff \with { midiInstrument = "acoustic guitar (nylon)" } {
+			\begleitung_git
+		}
 		\midi { }
 	}
 }
 \book {
 	\bookOutputSuffix "bass"
 	\score {
-		<<
-			\new StaffGroup << 
-				\new Staff { \bass_git }
-	 			\new TabStaff \with { stringTunings = #bass-tuning } { \bass_tab }
-			>>
+		\new StaffGroup << 
+			\new Staff { \bass_git }
+			\new TabStaff \with { stringTunings = #bass-tuning } { \bass_tab }
 		>>
 		\layout {
 			indent = 0\in
@@ -387,9 +386,7 @@ bass_tab = <<
 		}
 	}
 	\score {
-		<<
-			\new Staff \with { midiInstrument = "contrabass" } { \bass_git }
-		>>
+		\new Staff \with { midiInstrument = "contrabass" } { \bass_git }
 		\midi { }
 	}
 }
