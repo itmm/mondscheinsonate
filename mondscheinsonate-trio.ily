@@ -1,4 +1,4 @@
-\version "2.24.4"
+\version "2.26.0"
 
 today = #(strftime "%d.%m.%Y" (localtime (current-time)))
 
@@ -49,6 +49,13 @@ melodie = {
 % 69
 	<< gis1 cis >> \bar "|."
 % 70
+}
+
+akkorde = \chordmode {
+% 1
+	cis1:m | cis:m7/b | a2 d:/fis | fis4:/gis cis:m/gis gis:11^5 gis:7 |
+% 5
+	cis1:m | gis:7^5 | 
 }
 
 begleitung = {
@@ -305,6 +312,7 @@ bass_tab = {
 				\new Staff { \melodie_git }
 				\new TabStaff { \melodie_tab }
 			>>
+			\new ChordNames { \akkorde }
 			\new StaffGroup \with { instrumentName = \markup { \column {
 				"Klassik- " \line { "gitarre" }
 			}}} << 
@@ -401,3 +409,11 @@ bass_tab = {
 		\midi { }
 	}
 }
+\book {
+	\bookOutputSuffix "akkorde"
+	\score {
+		\new ChordNames { \akkorde }
+		\midi { }
+	}
+}
+
