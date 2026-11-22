@@ -21,9 +21,9 @@ bass = {
 % 9
 	e1 | e | d | c4 b ais2 |
 % 13
-	b2 e,4 g | fis2 fis | b1\6~ | b4 e\5 g e\5 |
+	b2 e,4 g | fis2 fis | b1\6~ | b4\6 e\5 g e\5 |
 % 17
-	b1\6~ | b4 e\5 g e\5 | b2\6 gis | eis2 fis' |
+	b1\6~ | b4\6 e\5 g e\5 | b2\6 gis | eis'2 fis |
 % 21
 	b,2 bis | cis cis | <cis\6 fis\5>1 | <cis\6 eis\5> |
 % 25
@@ -40,7 +40,7 @@ bass = {
 % 41
 	fis2 gis | << cis1 gis' >> | << bis,1 gis'>> | cis,2 fis, |
 % 45
-	b2 b | e1 | dis | e2 dis4\3 cis\3 |
+	b2 b\3 | e1 | dis | e2\2 dis4\3 cis\3 |
 % 49
 	<< bis2\4 gis'\2 >> << cis,\4 gis'\2 >> | fis,2\5 gis\4 |
 	cis1\3~ | cis4\3 fis\3 a\2 fis\3 |
