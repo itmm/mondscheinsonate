@@ -32,7 +32,7 @@ bass = {
 	<cis\6 gis'\4>2 fis4\5 fisis\5 |
 	gis1\4 |
 % 29
-	gis1 | gis | gis | gis |
+	gis4 s2. | gis1\5 | gis | gis |
 % 33
 	gis1 | gis | gis~ | gis~ |
 % 37
@@ -40,12 +40,12 @@ bass = {
 % 41
 	fis2 gis | << cis1 gis' >> | << bis,1 gis'>> | cis,2 fis, |
 % 45
-	b2 b | e1 | dis | e2 dis4 cis |
+	b2 b | e1 | dis | e2 dis4\3 cis\3 |
 % 49
-	<< bis2 gis' >> << cis, gis' >> | fis,2 gis      |
-	cis1~                                   | cis4 fis a fis |
+	<< bis2\4 gis'\2 >> << cis,\4 gis'\2 >> | fis,2\5 gis\4 |
+	cis1\3~ | cis4\3 fis\3 a\2 fis\3 |
 % 53
-	cis1~ | cis4 fis a fis | cis2 fis | dis2. e4 |
+	cis1\4~ | cis4\4 fis\3 a\2 fis\3 | cis2\3 fis\2 | dis2. e4 |
 % 57
 	cis4 dis bis cis | a2 gis4 fis | gis2 gis | cis1 |
 % 61
@@ -112,6 +112,8 @@ melodie_bass_tab = <<
 \book {
 	\paper {
 		#(set-paper-size "a4")
+		page-count = #2
+		ragged-last-bottom = #f
 	}
 
 	\bookOutputSuffix "melodie-bass"
