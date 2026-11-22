@@ -12,29 +12,29 @@ today = #(strftime "%d.%m.%Y" (localtime (current-time)))
 melodie = {
 	\tempo 4 = 80
 % 1
-	r1 | r | r | r |
+	s1 | s | s | s |
 % 5
-	r2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4\2 b |
+	s2. gis'8. gis16 | gis2. gis8. gis16 | gis2 a | gis fis4\2 b |
 % 9
-	e,4 r2. | r2. g8. g16 | g2. g8. g16 | g2. fis4 |
+	e,4 s2. | s2. g8. g16 | g2. g8. g16 | g2. fis4 |
 % 13
-	fis2 g4 e | fis2 fis | r2. b4 | c2. ais4 |
+	fis2 g4 e | fis2 fis | s2. b4 | c2. ais4 |
 % 17
 	b2. b4 | c2. ais4 | b2 b | b a |
 % 21
-	g2 fis | cis cis4 cis | r2. cis'8. cis16 | cis2. cis8. cis16 |
+	g2 fis | cis cis4 cis | s2. cis'8. cis16 | cis2. cis8. cis16 |
 % 25
-	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | r gis a fis |
+	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | s gis a fis |
 % 29
-	r4 gis, a fis | r cis'' e cis | r cis, e cis | r1 |
+	s4 gis, a fis | s cis'' e cis | s cis, e cis | s1 |
 % 33
-	r1 | r | r | r |
+	s1 | s | s | s |
 % 37
-	r2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 d4 cis | bis2 r2 |
+	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 d4 cis | bis2 s2 |
 % 41
-	r1 | r2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
+	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
-	gis2 fis4\2 b | e, r2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
+	gis2 fis4\2 b | e, s2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
 % 49
 	dis2 e | d2 bis | cis2. cis4 | d2. bis4 |
 % 53
@@ -45,7 +45,7 @@ melodie = {
 	gis2. gis8. gis16 | gis2. gis8. gis16 |
 	gis2. gis8. gis16 | gis2. gis8. gis16 |
 % 65
-	gis2. gis8. gis16 | gis2 cis2 | gis2 r2 | r2 << gis' cis >> |
+	gis2. gis8. gis16 | gis2 cis2 | gis2 s2 | s2 << gis' cis >> |
 % 69
 	<< gis1 cis >> \bar "|."
 % 70
@@ -215,20 +215,20 @@ bass = {
 % 1
 	cis,1 | b | a2 fis| gis gis | 
 % 5
-	<< cis1\3 gis'\2 >> | << bis,\3 gis'\2 >> | cis,2 fis, | b b |
+	<< cis1 gis' >> | << bis, gis' >> | cis,2 fis, | b b\6 |
 % 9
 	e1 | e | d | c4 b ais2 |
 % 13
-	b2 e,4 g | fis2 fis | b1~ | b4 e g e |
+	b2 e,4 g | fis2 fis | b1\6~ | b4 e\5 g e\5 |
 % 17
-	b1~ | b4 e g e | b2 gis | eis2 fis |
+	b1\6~ | b4 e\5 g e\5 | b2\6 gis | eis2 fis' |
 % 21
-	b2 bis | cis cis | << fis,1 cis' >> | << eis, cis' >> |
+	b,2 bis | cis cis | <cis\6 fis\5>1 | <cis\6 eis\5> |
 % 25
-	fis2 dis4 cis                             |
-	<< bis2.\3 gis'\2 >> << bis,4\3 gis'\2 >> |
-	<< cis,2\3 gis'\2 >> fis,4 fisis          |
-	gis1                                      |
+	fis2\5 dis4\5 cis\6 |
+	<bis\6 gis'\4>2. <bis\6 gis'\4>4 |
+	<cis\6 gis'\4>2 fis4\5 fisis\5 |
+	gis1\4 |
 % 29
 	gis1 | gis | gis | gis |
 % 33
@@ -236,11 +236,11 @@ bass = {
 % 37
 	gis1 | gis | gis | gis2 a |
 % 41
-	fis2 gis | << cis1\3 gis'\2 >> | << bis,1\3 gis'\2>> | cis,2 fis, |
+	fis2 gis | << cis1 gis' >> | << bis,1 gis'>> | cis,2 fis, |
 % 45
 	b2 b | e1 | dis | e2 dis4 cis |
 % 49
-	<< bis2\3 gis'\2 >> << cis,\3 gis'\2 >> | fis,2 gis      |
+	<< bis2 gis' >> << cis, gis' >> | fis,2 gis      |
 	cis1~                                   | cis4 fis a fis |
 % 53
 	cis1~ | cis4 fis a fis | cis2 fis | dis2. e4 |
@@ -249,7 +249,7 @@ bass = {
 % 61
 	bis1 | cis | gis | cis |
 % 65
-	gis1 | cis~ | cis2 r2 | cis2 cis |
+	gis1 | cis~ | cis2 s2 | cis2 cis |
 % 69
 	cis1 \bar "|."
 % 70
@@ -270,8 +270,8 @@ begleitung_tab = {
 melodie_bass_git = <<
 	\time 4/4
 	\clef "treble_8" \key cis \minor
-	\new Voice \relative { \melodie }
-	\new Voice \relative c' { \bass }
+	\new Voice \relative { \voiceOne \melodie }
+	\new Voice \relative c' { \voiceTwo \bass }
 >>
 
 melodie_bass_tab = <<
