@@ -18,6 +18,12 @@ Build_Files := ${Inputs:.ly=.build}
 
 all: ${Outputs}
 
+mondscheinsonate-trio.ly: mondscheinsonate-melodie.ily mondscheinsonate-begleitung.ily
+	touch $@
+
+mondscheinsonate-duo.ly: mondscheinsonate-melodie.ily mondscheinsonate-begleitung.ily
+	touch $@
+
 clean:
 	rm -f ${Outputs} ${Build_Files}
 
