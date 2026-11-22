@@ -281,6 +281,22 @@ bass = {
 % 70
 }
 
+akkorde = \chordmode {
+% 1
+	cis1:m | cis:m7/b | a2 d:/fis | fis4:/gis cis:m/gis gis:11^9.7.5 gis:7 |
+% 5
+	cis1:m | gis:7^5 | cis2:m fis | e:/b b:7 |
+% 9
+	e1 | e:m  | g:7 | c4 e:m/b cis:m/ais fis:7/ais |
+% 13
+	b2:m cis4:min7/e cis4:min7/g | b2:m/fis fis |
+	b:m b | c4:7/b c:7/e c:7/g ais:m9/cis |
+% 17
+	b1 | c4:7/b c:7/e c:7/g ais:m9/cis |
+	b2 eis:m7-/gis | cis:7/eis fis:m |
+% 21
+}
+
 upper = <<
 	\time 4/4
 	\clef "treble" \key cis \minor
@@ -298,6 +314,7 @@ lower = <<
 	\score {
 		\new PianoStaff \with { midiInstrument = "acoustic grand" }
 			<<
+				\new ChordNames { \akkorde }
 				\new Staff = "upper" \upper
 				\new Staff = "lower" \lower
 			>>
@@ -308,4 +325,10 @@ lower = <<
 		\midi { }
 	}
 }
-
+\book {
+	\bookOutputSuffix "akkorde"
+	\score {
+		\new ChordNames { \akkorde }
+		\midi { }
+	}
+}
