@@ -9,8 +9,11 @@ Trio_Outputs += mondscheinsonate-trio-begleitung.midi
 Trio_Outputs += mondscheinsonate-trio-bass.pdf
 Trio_Outputs += mondscheinsonate-trio-bass.midi
 Trio_Outputs += mondscheinsonate-trio-akkorde.midi
+Duo_Outputs += mondscheinsonate-duo-melodie-bass.pdf
+Duo_Outputs += mondscheinsonate-duo-melodie-bass.midi
 
 Outputs += ${Trio_Outputs}
+Outputs += ${Duo_Outputs}
 Build_Files := ${Inputs:.ly=.build}
 
 all: ${Outputs}
