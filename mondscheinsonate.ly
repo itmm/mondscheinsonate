@@ -295,6 +295,11 @@ akkorde = \chordmode {
 	b1 | c4:7/b c:7/e c:7/g ais:m9/cis |
 	b2 eis:m7-/gis | cis:7/eis fis:m |
 % 21
+	g2:/b dis:m7/bis | fis:m/cis fis4:m9^3.7/cis cis |
+	fis1:m | cis:7 |
+% 25
+	fis2:m bis4:m/d bis:m7/cis | gis1:7/bis |
+
 }
 
 upper = <<
