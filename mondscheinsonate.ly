@@ -11,6 +11,9 @@
 	%page-count = #3 
 }
 
+lh = { \change Staff = "lower" }
+rh = { \change Staff = "upper" }
+
 melodie = {
 	\tempo 4 = 80
 	\voiceOne
@@ -29,13 +32,13 @@ melodie = {
 % 25
 	cis2 bis4 cis | dis2. dis4 | e2 dis4 cis | s gis a fis |
 % 29
-	s4 gis, a fis | s cis'' e cis | s cis, e cis | s1 |
+	s4 \lh \stemDown gis, a fis \stemUp \rh | s cis'' e cis | s \lh cis, e cis \rh | s1 |
 % 33
 	s1 | s | s | s |
 % 37
-	s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 d4 cis | bis2 s2 |
+	\lh \stemDown s2 \times 2/3 { a8 dis,4 } cis4 | bis2 dis4 cis | bis2 d4 cis | bis2 s2 |
 % 41
-	s1 | s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
+	s1 | \rh \stemUp s2. gis''8. gis16 | gis2. gis8. gis16 | gis2 a |
 % 45
 	gis2 fis4 b | e, s2 b'8. b16 | b2. b8. b16 | b2 bis4 cis |
 % 49
@@ -43,12 +46,12 @@ melodie = {
 % 53
 	cis2. cis4 | d2. bis4 | cis2 cis | b2. b4 |
 % 57
-	a4 a gis gis | fis2 gis4 a | gis2 gis | gis,,2. gis8. gis16 |
+	a4 a gis gis | fis2 gis4 a | gis2 gis | \lh gis,,2. \stemDown gis8. gis16 \stemUp |
 % 61
-	gis2. gis8. gis16 | gis2. gis8. gis16 |
-	gis2. gis8. gis16 | gis2. gis8. gis16 |
+	gis2. \stemDown gis8. gis16 \stemUp | gis2. gis8. gis16 |
+	gis2. \stemDown  gis8. gis16 \stemUp | gis2. gis8. gis16 |
 % 65
-	gis2. gis8. gis16 | gis2 cis2 | gis2 s2 | s1 |
+	gis2. \stemDown gis8. gis16 | gis2 cis2 | gis2 s2 | s1 |
 % 69
 	s |
 % 70
@@ -56,7 +59,7 @@ melodie = {
 
 begleitung = {
 	\tempo 4 = 80
-	\voiceTwo
+	\voiceThree \stemNeutral
 % 1
 	\times 2/3 { gis8 cis e } \times 2/3 { gis, cis e }
 		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }      |
@@ -65,31 +68,32 @@ begleitung = {
 	\times 2/3 { a,8( cis e } \times 2/3 { a, cis e) }
 		\times 2/3 { a,( d fis } \times 2/3 { a, d fis) }        |
 	\times 2/3 { gis,8( bis fis' } \times 2/3 { gis, cis e }
-		\times 2/3 { gis, cis dis } \times 2/3 { fis, bis dis) } |
+		\times 2/3 { gis, cis dis } \times 2/3 { \lh fis, \rh bis dis) } |
 % 5
-	\times 2/3 { e,8 gis cis } \times 2/3 { gis cis e }
-		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }       |
-	\times 2/3 { gis,8 dis' fis } \times 2/3 { gis, dis' fis }
-		\times 2/3 { gis, dis' fis } \times 2/3 { gis, dis' fis } |
-	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
-		\times 2/3 { a, cis fis } \times 2/3 { a, cis fis }       |
-	\times 2/3 { gis,8 b e} \times 2/3 { gis, b e }
-		\times 2/3 { a, b dis } \times 2/3 { a b dis }            |
+	\times 2/3 { \stemUp \lh e,8 gis cis \stemNeutral } \times 2/3 { gis \rh cis e }
+		\times 2/3 { \lh gis, \rh cis e } \times 2/3 { \lh gis, \rh cis e } |
+	\times 2/3 { \lh gis,8 \rh dis' fis } \times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis } |
+	\times 2/3 { \lh gis,8 \rh cis e } \times 2/3 { \lh gis, \rh cis e }
+		\stemUp \lh \times 2/3 { a, \rh \stemUp cis fis } \times 2/3 { \lh \stemUp  a, \rh \stemUp  cis fis } |
+	\times 2/3 { \stemNeutral \lh gis,8 b \rh e} \times 2/3 { \lh gis, b \rh e }
+		\times 2/3 { \lh a, b \rh dis } \times 2/3 { \lh a b \rh dis } |
 % 9
-	\times 2/3 { gis,8 b e } \times 2/3 { gis, b e }
-		\times 2/3 { gis, b e } \times 2/3 { gis, b e }    |
-	\times 2/3 { g,8 b e } \times 2/3 { g, b e }
-		\times 2/3 { g, b e } \times 2/3 { g, b e}         |
-	\times 2/3 { g,8 b f' } \times 2/3 { g, b f' }
-		\times 2/3 { g, b f' } \times 2/3 { g, b f' }      |
-	\times 2/3 { g,8 c e } \times 2/3 { g, b e }
-		\times 2/3 { g, cis e } \times 2/3 { fis, cis' e } |
+	\times 2/3 { \lh gis,8 b \rh e } \times 2/3 { \lh gis, b \rh e }
+		\times 2/3 { \lh gis, b \rh e } \times 2/3 { \lh gis, b \rh e } |
+	\times 2/3 { \lh g,8 b \rh e } \times 2/3 { \lh g, b \rh e }
+		\times 2/3 { \lh g, b \rh e } \times 2/3 { \lh g, b \rh e} |
+	\times 2/3 { \lh g,8 b \rh f' } \times 2/3 { \lh g, b \rh f' }
+		\times 2/3 { \lh g, b \rh f' } \times 2/3 { \lh g, b \rh f' } |
+	\times 2/3 { \lh g,8 c \rh e } \times 2/3 { \lh g, b \rh e }
+		\times 2/3 { \lh g, cis \rh e } \times 2/3 { \lh fis, cis' \rh e } |
 % 13
-	\times 2/3 { fis,8 b d } \times 2/3 { fis, b d }
+	\times 2/3 { \stemUp \lh fis,8 b d } \times 2/3 { fis, b d }
 		\times 2/3 { g, b cis } \times 2/3 { e, b' cis }        |
 	\times 2/3 { fis,8 b d } \times 2/3 { fis, b d }
 		\times 2/3 { fis, ais cis } \times 2/3 { fis, ais cis } |
-	\times 2/3 { b8 d fis } \times 2/3 { b, d fis }
+	\times 2/3 { \stemDown \rh b8 d fis } \times 2/3 { b, d fis }
 		\times 2/3 { b, dis fis } \times 2/3 { b, dis fis }     |
 	\times 2/3 { b,8 e g } \times 2/3 { b, e g }
 		\times 2/3 { b, e g } \times 2/3 { b, e g }             |
@@ -101,14 +105,14 @@ begleitung = {
 	\times 2/3 { b, dis fis } \times 2/3 { b, dis fis }
 		\times 2/3 { b, d eis } \times 2/3 { b d eis }      |
 	\times 2/3 { b cis gis' } \times 2/3 { b, cis gis' }
-		\times 2/3 { a, cis fis } \times 2/3 { a, cis fis } |
+		\times 2/3 { \stemNeutral \lh a, \rh cis fis } \times 2/3 { \lh a, \rh cis fis } |
 % 21
-	\times 2/3 { g,8 b d } \times 2/3 { g, b d }
+	\times 2/3 { \stemUp \lh g,8 b d } \times 2/3 { g, b d }
 		\times 2/3 { fis, a dis } \times 2/3 { fis, a dis }     |
 	\times 2/3 { cis,8 fis a } \times 2/3 { cis, fis a }
 		\times 2/3 { cis, fis gis } \times 2/3 { cis, eis gis } |
-	\times 2/3 { fis8 a cis } \times 2/3 { a cis fis }
-		\times 2/3 { cis fis a } \times 2/3 { cis, fis a }      |
+	\times 2/3 { fis8 a cis } \times 2/3 { \stemNeutral a cis \rh fis }
+		\times 2/3 { \stemDown cis fis a } \times 2/3 { cis, fis a }      |
 	\times 2/3 { cis,8 gis' b } \times 2/3 { cis, gis' b }
 		\times 2/3 { cis, gis' b } \times 2/3 { cis, gis' b }   |
 % 25
@@ -118,19 +122,21 @@ begleitung = {
 		\times 2/3 { dis fis gis } \times 2/3 { dis fis gis }  |
 	\times 2/3 { e8 gis cis } \times 2/3 { e, gis cis }
 		\times 2/3 { dis, fis a } \times 2/3 { cis, e ais }    |
-	\times 2/3 { bis8 bis, dis } \times 2/3 { gis bis, dis }
-		\times 2/3 { a' bis, dis } \times 2/3 { fis bis, dis } |
+	\times 2/3 { \stemNeutral bis8 bis, dis }
+		\times 2/3 { \stemDown gis bis, dis }
+		\times 2/3 { a' bis, dis }
+		\times 2/3 { fis bis, dis \stemNeutral } |
 % 29
-	\times 2/3 { r8 bis dis } \times 2/3 { gis, bis dis }
-		\times 2/3 { a bis dis } \times 2/3 { fis, bis dis }  |
-	\times 2/3 { e,8 e' gis } \times 2/3 { cis e, gis }
+	\times 2/3 { r8 bis dis } \times 2/3 { \lh gis, bis \rh dis }
+		\times 2/3 { \lh a bis \rh dis } \times 2/3 { \stemUp \lh fis, bis \rh dis \stemNeutral } |
+	\times 2/3 { \lh e,8 \rh  e' gis } \times 2/3 { \stemDown cis e, gis }
+		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis \stemNeutral } |
+	\times 2/3 { \lh r8 e, gis } \times 2/3 { cis e, gis }
 		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis }    |
-	\times 2/3 { r8 e, gis } \times 2/3 { cis e, gis }
-		\times 2/3 { e' e, gis } \times 2/3 { cis e, gis }    |
-	\times 2/3 { dis8 a' fis } \times 2/3 { bis a dis }
+	\times 2/3 { \stemUp dis8 a' fis \stemNeutral } \times 2/3 { bis a \rh dis }
 		\times 2/3 { bis fis' dis } \times 2/3 { a' fis bis } |
 % 33
-	\times 2/3 { e,,8 cis' gis } \times 2/3 { e' cis gis' }
+	\times 2/3 { \lh \stemUp e,,8 cis' gis \rh \stemNeutral } \times 2/3 { e' cis gis' }
 		\times 2/3 { e cis' gis } \times 2/3 { e' cis gis }     |
 	\times 2/3 { cis,8 fisis e } \times 2/3 { ais fisis cis' }
 		\times 2/3 { ais e' cis } \times 2/3 { fisis e ais }    |
@@ -139,8 +145,8 @@ begleitung = {
 	\times 2/3 { bis8 fis a } \times 2/3 { dis, fis bis, }
 		\times 2/3 { dis a bis } \times 2/3 { fis a dis, }      |
 % 37
-	\times 2/3 { fis8 bis, dis } \times 2/3 { a bis fis }
-		\times 2/3 { a dis, fis } \times 2/3 { cis fis a }   |
+	\times 2/3 { fis8 bis, dis } \times 2/3 { a bis \lh fis }
+		\times 2/3 { \stemUp a dis, fis } \times 2/3 { cis fis a }   |
 	\times 2/3 { bis,8 fis' gis } \times 2/3 { a gis fis }
 		\times 2/3 { dis fis a } \times 2/3 { cis, fis a }   |
 	\times 2/3 { bis,8 fis' gis } \times 2/3 { a gis fis }
@@ -150,16 +156,17 @@ begleitung = {
 % 41
 	\times 2/3 { dis,8 a' cis } \times 2/3 { dis, a' cis }
 		\times 2/3 { dis, gis bis } \times 2/3 { dis, gis bis }   |
-	\times 2/3 { e,8 gis cis } \times 2/3 { gis cis e }
-		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }       |
-	\times 2/3 { gis,8 dis' fis } \times 2/3 { gis, dis' fis }
-		\times 2/3 { gis, dis' fis } \times 2/3 { gis, dis' fis } |
-	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
-		\times 2/3 { gis, cis fis } \times 2/3 { gis, cis fis }   |
+	\times 2/3 { e,8 gis cis } \times 2/3 { \stemNeutral gis \rh cis e }
+		\times 2/3 { \lh gis, \rh cis e } \times 2/3 { \lh gis, \rh cis e } |
+	\times 2/3 { \lh gis,8 \rh dis' fis } \times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis } |
+	\times 2/3 { \lh gis,8 \rh cis e } \times 2/3 { \lh gis, \rh cis e }
+		\times 2/3 { \lh gis, \rh cis fis } \times 2/3 { \lh gis, \rh cis fis } |
 % 45
-	\times 2/3 { gis,8 b e } \times 2/3 { gis, b e }
-		\times 2/3 { a, b dis } \times 2/3 { a b dis }         |
-	\times 2/3 { gis,8 b e } \times 2/3 { b e gis }
+	\times 2/3 { \lh gis,8 b \rh e } \times 2/3 { \lh gis, b \rh e }
+		\times 2/3 { \lh a, b \rh dis } \times 2/3 { \lh a b \rh dis } |
+	\times 2/3 { \lh \stemDown gis,8 b \rh e } \times 2/3 { b e gis }
 		\times 2/3 { b, e gis } \times 2/3 { b, e gis }        |
 	\times 2/3 { b,8 fis' a } \times 2/3 { b, fis' a }
 		\times 2/3 { b, fis' a } \times 2/3 { b, fis' a }      |
@@ -184,27 +191,28 @@ begleitung = {
 	\times 2/3 { b,8 fis' a } \times 2/3 { b, fis' a }
 		\times 2/3 { b, fis' a } \times 2/3 { b, e gis }        |
 % 57
-	\times 2/3 { a,8 e' gis } \times 2/3 { a, dis fis }
-		\times 2/3 { gis, dis' fis } \times 2/3 { gis, cis e }  |
-	\times 2/3 { fis,8 cis' dis } \times 2/3 { fis, cis' dis }
-		\times 2/3 { gis, cis dis } \times 2/3 { a cis dis }    |
-	\times 2/3 { gis,8 cis e } \times 2/3 { gis, cis e }
-		\times 2/3 { fis, bis dis } \times 2/3 { fis, bis dis } |
-	\times 2/3 { e,8 gis cis } \times 2/3 { gis cis e }
-		\times 2/3 { gis, cis e } \times 2/3 { gis, cis e }     |
+	\times 2/3 { \lh \stemNeutral a,8 \rh e' gis } \times 2/3 { \lh a, \rh dis fis }
+		\times 2/3 { \lh gis, \rh dis' fis } \times 2/3 { \lh gis, \rh cis e } |
+	\times 2/3 { \lh fis,8 \rh cis' dis } \times 2/3 { \lh fis, \rh cis' dis }
+		\times 2/3 { \lh gis, \rh cis dis } \times 2/3 { \stemUp \lh a \rh cis dis \stemNeutral } |
+	\times 2/3 { \lh gis,8 \rh cis e } \times 2/3 { \lh gis, \rh cis e }
+		\times 2/3 { \stemUp \lh fis, bis \rh dis } \times 2/3 { \lh fis, bis \rh dis } |
+	\times 2/3 { \lh e,8 gis cis \stemNeutral } \times 2/3 { gis \rh cis e }
+		\times 2/3 { \lh gis, \rh cis e } \times 2/3 { \lh gis, \rh cis e } |
 % 61
-	\times 2/3 { gis,8 dis' fis } \times 2/3 { gis, dis' fis }
-		\times 2/3 { gis, dis' fis } \times 2/3 { gis, dis' fis }  |
-	\times 2/3 { gis,8 e' cis } \times 2/3 { gis' e cis' }
+	\times 2/3 { \lh gis,8 \rh dis' fis } \times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis }
+		\times 2/3 { \lh gis, \rh dis' fis } |
+	\times 2/3 { \lh gis,8 \rh e' cis } \times 2/3 { gis' e cis' }
 		\times 2/3 { gis e' cis } \times 2/3 { gis' e cis }        |
 	\times 2/3 { bis8 dis a } \times 2/3 { bis fis a }
-		\times 2/3 { dis, fis a, } \times 2/3 { bis gis fis }      |
-	\times 2/3 { << e8 cis' >> e cis } \times 2/3 { gis' e cis' }
+		\times 2/3 { dis, fis \lh a, } \times 2/3 { bis gis fis } |
+	\times 2/3 { << e8 cis' >> \rh e cis } \times 2/3 { gis' e cis' }
 		\times 2/3 { gis e' cis } \times 2/3 { gis' e cis }        |
 % 65
 	\times 2/3 { bis8 dis a } \times 2/3 { bis fis a }
-		\times 2/3 { dis, fis a, } \times 2/3 { bis gis fis }      |
-	\times 2/3 { << e8 cis' >> gis cis } \times 2/3 { e cis gis }
+		\times 2/3 { dis, fis \lh a, } \times 2/3 { bis gis fis }      |
+	\times 2/3 { \stemUp << e8 cis' >> gis cis } \times 2/3 { \rh e \lh cis gis \stemNeutral }
 		\times 2/3 { r e gis } \times 2/3 { cis gis e }            |
 	\times 2/3 { r8 cis e } \times 2/3 { gis e cis }
 		\times 2/3 { gis cis gis } \times 2/3 { e gis e }          |
